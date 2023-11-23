@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Progress</title>
+    <style>
+      :root {
+        font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+
+        color-scheme: light dark;
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #242424;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        place-items: center;
+        min-width: 320px;
+        min-height: 100dvh;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          color: #213547;
+          background-color: #ffffff;
+        }
+      }
+
+      #root {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="App">
+      <h2 id="progress"></h2>
+    </div>
+  </body>
+  <script type="module">
+    import { DateTime } from "https://unpkg.com/luxon?module";
+
+    const start = DateTime.local().set({
+      month: 10,
+      day: 27,
+      year: 2023,
+      hours: 12,
+      minutes: 0,
+      seconds: 0,
+    });
+    const end = start.plus({ months: 9 }).endOf("day");
+
+    const getProgress = () => {
+      const now = DateTime.local();
+
+      if (start > now) {
+        return 0;
+      }
+
+      if (end < now) {
+        return 100;
+      }
+
+      return (
+        ((now.toMillis() - start.toMillis()) /
+          (end.toMillis() - start.toMillis())) *
+        100
+      );
+    };
+    const progressEl = document.getElementById("progress");
+    progressEl.innerText = `${getProgress().toFixed(2)}%`;
+  </script>
+</html>
