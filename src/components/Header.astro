@@ -4,7 +4,7 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h1><a href="/">{SITE_TITLE}</a></h1>
+		<h4><a href="/">{SITE_TITLE}</a></h4>
 	</nav>
 </header>
 <style>
@@ -14,18 +14,13 @@ import { SITE_TITLE } from '../consts';
 		margin: auto;
 		padding: 3em 1em 1em 1em;
 	}
-	h1 {
+	h4 {
 		margin: 0;
 		font-size: 1em;
 	}
 
-	h1 a,
-	h1 a.active {
+	h4 a {
 		text-decoration: none;
-	}
-	nav a {
 		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
 	}
 </style>
