@@ -68,3 +68,5 @@ Useful links:
 
 - [When should I use Redux?](https://redux.js.org/faq/general#when-should-i-use-redux)
 - [You Might Not Need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)
+
+[Leave a comment](https://x.com/nuclear0/status/1836029153230966890)
