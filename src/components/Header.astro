@@ -1,0 +1,26 @@
+---
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav>
+		<h4><a href="/">{SITE_TITLE}</a></h4>
+	</nav>
+</header>
+<style>
+	header {
+		width: 720px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		padding: 3em 1em 1em 1em;
+	}
+	h4 {
+		margin: 0;
+		font-size: 1em;
+	}
+
+	h4 a {
+		text-decoration: none;
+		color: var(--black);
+	}
+</style>
