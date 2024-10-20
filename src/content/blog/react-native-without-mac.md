@@ -61,3 +61,5 @@ Now run builded app on your device and open Dev tools (shake your device) and en
 And that's it!
 
 You can change your code and see the changes in real time.
+
+[Leave a comment](https://x.com/nuclear0/status/1847961704576995399)
