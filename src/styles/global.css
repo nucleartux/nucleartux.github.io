@@ -84,6 +84,14 @@ p {
 .prose p {
   margin-bottom: 2em;
 }
+
+.prose img {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 textarea {
   width: 100%;
   font-size: 16px;
@@ -94,15 +102,11 @@ input {
 table {
   width: 100%;
 }
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
 code {
   padding: 2px 5px;
   background-color: light-dark(rgb(var(--gray-light)), rgb(var(--gray-dark)));
   border-radius: 2px;
+  font-size: 16px;
 }
 pre {
   padding: 1.5em;
@@ -110,6 +114,7 @@ pre {
 }
 pre > code {
   all: unset;
+  font-size: 16px;
 }
 blockquote {
   border-left: 4px solid light-dark(var(--accent), var(--accent-dark));
