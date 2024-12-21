@@ -130,3 +130,5 @@ With this command TS will automatically run typechecking for all referenced proj
 With modifications described I was able to optimize build time from 49s to 13s.
 
 Most important note: If you have a monorepo where each package is independent (i.e., it doesn't use other packages) or an application that uses all packages at once (making it just a monorepo for the sake of having a monorepo), you DON'T NEED such a configuration. You should probably use the `include` option.
+
+[Leave a comment](https://bsky.app/profile/adrov.me/post/3ldtj6qigbs2j)
