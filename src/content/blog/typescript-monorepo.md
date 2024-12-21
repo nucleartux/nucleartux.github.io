@@ -71,6 +71,7 @@ I needed to do some modifications:
 // packages/shared/tsconfig.json
 {
   "compilerOptions": {
+    "emitDeclarationOnly": true,
     "composite": true
   },
   "include": ["src"]
@@ -83,7 +84,6 @@ I needed to do some modifications:
 // packages/app1/tsconfig.json and packages/app2/tsconfig.json
 {
   "compilerOptions": {
-    "composite": true,
     "outDir": "dist",
     "emit": true
   },
