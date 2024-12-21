@@ -65,7 +65,7 @@ How can I avoid wasting time compiling the same folder twice? It turned out that
 
 I needed to do some modifications:
 
-1. Add the composite setting to the `shared` project. This means that the project will be used as part of another.
+1. Add the `composite` setting to the `shared` project. This means that the project will be used as part of another.
 
 ```json
 // packages/shared/tsconfig.json
