@@ -71,6 +71,7 @@ I needed to do some modifications:
 // packages/shared/tsconfig.json
 {
   "compilerOptions": {
+    "outDir": "dist",
     "emitDeclarationOnly": true,
     "composite": true
   },
@@ -119,7 +120,7 @@ And here is bonus tip. You can create the following TS config in the root of you
 }
 ```
 
-and run check with command (please not that it uses `-b` flag instead of `-p`):
+and run check with command (please note that it uses `-b` flag instead of `-p`):
 
 ```shell
 tsc -b tsconfig.json
