@@ -74,4 +74,6 @@ Publishing the mod was also convenient—a one-click action. However, I couldn�
 
 At the time of writing the article, my mod has over 10,000 active players, and the number is growing. I’ve also found other interesting mechanics that I’m not satisfied with and plan to modify.
 
-If you are interested, you can (download it here)[https://mods.paradoxplaza.com/mods/98476/Windows].
+If you are interested, you can [download it here](https://mods.paradoxplaza.com/mods/98476/Windows).
+
+[Leave a comment](https://bsky.app/profile/adrov.me/post/3lfzarofdb22n)
