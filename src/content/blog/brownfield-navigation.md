@@ -327,3 +327,5 @@ final class ReactNativeVC: UIViewController {
 Now everything works as expected on iOS as well. Users can freely navigate between RN screens using either React Navigation or native navigation, in any order and at any depth.
 
 I hope this helps anyone struggling with the challenging task of React Native brownfield integration!
+
+[Leave a comment](https://bsky.app/profile/adrov.me/post/3mfdnvjrhnc2s)
